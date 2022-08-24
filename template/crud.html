@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/crud1.css' %}">
+    </head>
+    <body>
+       <div id="bar"><lable>Welcome  Admin</lable><a  id="cu" href="../createservice">Create Service</a></div>
+       <center><h1 id="ud">User details</h1></center>
+       <div id="container"><table border="1px" >
+        <th id="id">Id</th>
+        <th id="vichle">Title</th>
+        <th id="vichle">Service Description</th>
+      
+        <th id="vichle" >Edit</th>
+
+        <tr>{% for i in servicedata %}
+            <td>{{i.id}}</td>
+                <td>{{i.main}}</td>
+                <td>{{i.adout}}</td>               
+                <td><a href="../editdata/{{i.id}}"><button id="edit">Edit</button></a></td>
+            </tr>{% endfor %}</tr>
+       </table>
+       <br></br>
+       <center><a href="../owner"><font >Go Back</font></a></center><br><br>
+    </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>

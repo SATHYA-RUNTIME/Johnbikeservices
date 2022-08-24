@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href={% static 'css/owner1.css' %}>
+    </head>
+    <body background={% static 'img/ownere.jpg' %}>
+     <h1>Welcome Admin!</h1>
+     <div id="container">      
+        <div id="incontainer"> <h1>ADD & Edit service Detail</h1>
+        <p>Here the admin can able to <b> create / edit / delete</b> all his services and their details<br><br><br><br>
+        <a href="crud"><font >Go Inside</font></a></p>
+
+    </div>
+        <div id="incontainer">  <h1>View Booking List</h1><p>Here the Admin can View a list of all bookings <b>(pending, ready for delivery and completed).</b><br><br><br><br>
+            <a href="editbooking"><font >Go Inside</font></a></p>
+        </div>
+
+        <div id="incontainer1">  <h1>Worker Admin</h1><p> Here The  Owner And worker Both are Admin,here <b>The worker check any work currently avilable are not.</b> and send the aknowledement to the Owner<br><br><br>
+            <a href="worker"><font >Go Inside</font></a></p>
+        </div>
+    </div>
+        <a href="../"><button>GO<br>Home</button></a>
+   
+        
+        <script src="" async defer></script>
+    </body>
+</html>

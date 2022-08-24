@@ -1,0 +1,53 @@
+<html>
+    {% load static %}
+    <link rel='stylesheet' href={% static "css/services.css" %}>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <a href="/"> <img id="icon1" src={% static 'img/logos2.png' %}></img></a>
+        <div id="menu"><div id="title">Fill Details</div></div>
+        <div id='service'>
+            <div id="inside"><img src={% static 'img/gen.jpg' %}></div>
+            <div id="inside2">
+                <div id="cointainer"> 
+            <form method="POST">
+                {% csrf_token %}
+            <h1 >Gendral service Booking<hr></h1>
+           <input id="input" placeholder="Your Name" type="text" name="yourname" required>
+           <input id="date" placeholder="Choose a Date" type="date" name="date" required>
+           {% for i in checkbox %}
+           {% if i.main == "General service check-up" %}
+           <lable> <input id="cb"  name="same" type="checkbox" value="{{i.main}}" checked>{{i.main}}</lable>
+
+           {% else %}
+           <lable> <input id="cb"  name="same" type="checkbox" value="{{i.main}}">{{i.main}}</lable>
+           {% endif %}
+           {% endfor %}
+           <input id="input" placeholder="Vehicle name (i.e Pulser200)" type="text" name="vname" required>
+            <input id="input" placeholder="Vehicle Number" type="text" name="vnumber" required>
+            <select id="tpe"  name="vtype" required>
+                <option>---Vehicle Type---</option>
+
+                <option>gear bike</option>
+                <option>scotoor</option>
+                <option>electric bike</option>
+
+            </select><br>
+            <input type="submit" value="SUBMIT" id="submit">
+            
+
+            </form>
+        </div>
+                <div>
+
+        </div>
+      
+        </body>
+    <html>

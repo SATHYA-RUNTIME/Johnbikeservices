@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/crud1.css' %}">
+    </head>
+    <body>
+       <div id="bar"><lable>Welcome  Admin</lable><a id="cu" href="../createservice">Create services</a></div>
+       <div id="container"><table border="1px" >
+        <th id="vichle">Title</th>
+        <th id="vichle">Service Description</th>
+        
+        <th id="vichle" >Delete</th>
+        <th id="vichle" >Edit</th>
+        
+{% for i in servicedata %}
+<form method="POST">
+    {% csrf_token %}
+        <tr>
+            <td><input name="title" type="text" value="{{i.main}}"></td>
+            <td><textarea id="ta" name="content" rows="4" cols="50">{{i.adout}}
+            </textarea></td>     
+            <td><button background-color="yellow"><a id="href" href=../{{go}}/{{i.id}}>{{del}}</a></button></td>
+            <td><a href="../crud"><input type="submit" id="edit2" value="save"></a></td>
+        </tr></form>
+{% endfor %}
+
+
+       </table>
+       <br></br>
+       <center><a href="."><font >Go Home</font></a></center></div>
+        <script src="" async defer></script>
+    </body>
+</html>

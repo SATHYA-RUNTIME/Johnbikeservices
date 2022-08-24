@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/editbooking1.css' %}">
+    </head>
+    <body>
+        <div id="bar"><lable>Welcome Admin</lable><a id="cu1" href="../admin">Master Admin</a><a id="cu" href="../alldetail">view All Detail</a></div>        
+        <div id="container">       <center><h1 id="ud">Your Service Detail</h1></center><br>
+         <table border="1px" >
+         <th id="id">Id</th>
+         <th id="vichle">Name</th>
+         <th id="vichle">Vichle name</th>
+         <th id="vichle">Vichle Number</th>
+         <th>services</th>
+         <th id="vichle" >Is completed</th>
+         
+ {% for i in servicedata %}
+        {% if i.flag == 1 %}  
+             <tr>
+             <td>{{i.id}}</td>
+             <td>{{i.uname}}</td>
+             <td>{{i.vname}}</td>
+             <td>{{i.vnumber}}</td>
+             <td>{{i.servicedel}}</td>
+            
+            <td><a id="completed1" href="#">Service Pending..</a></td></tr>
+            {% endif %}
+            {% if i.flag == 0 %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.uname}}</td>
+                <td>{{i.vname}}</td>
+                <td>{{i.vnumber}}</td>
+                <td>{{i.servicedel}}</td>
+             <td><a id="completed" href="../alluserservice/{{i.id}}">click to Delivery</a></td>
+             {% endif %}
+         </form>
+ {% endfor %}
+        </table>
+     <br><br>
+        <center><a href="../owner"><font >Go Back</font></a></center></div>
+         <script src="" async defer></script>
+        <script src="" async defer></script>
+    </body>
+</html>

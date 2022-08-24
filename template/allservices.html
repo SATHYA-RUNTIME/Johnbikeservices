@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href={% static 'css/allservices1.css' %}>
+    </head>
+    <body>
+        <div id="bar"><lable>Happy Service</lable><a id="cu" href="../adminlog">Add services</a></div>        
+        <div id="container">       <center><h1 id="ud">All Our Service Detail</h1></center><br>
+         <table border="1px" >
+         <th id="id">Title</th>
+         <th id="vichle">Description</th>
+         <th id="vichle">Choose Service</th>
+         
+         
+ {% for i in data %}
+             <tr>
+             <td>{{i.main}}</td>
+             <td>{{i.adout}}</td>
+             
+            
+            <td><a id="completed14" href="../service">Book Service</a></td></tr>
+           
+ {% endfor %}
+        </table>
+     <br><br>
+        <center><a href="../"><font >Go Back</font></a></center><br><br></div>
+        
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>John Bike Services</title>
+        <meta name="description" content=" this website for bike services ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href={% static 'css/home.css' %}>
+    </head>
+    <body>
+        <div id="bar">
+            <a href="/"> <img id="icon1" src={% static 'img/logos2.png' %}></img></a>
+            <div id="services">
+                <ul style="none">
+                    <a  href="#oserv"><li id="topbar">Our {{h}}Services</li></a>
+                    <a  href="status"><li id="topbar">Status</li></a>
+                    <a  href="prebook"><li id="topbar">Previous Bookings</li></a>
+                    <a  href="#"><li id="topbar">About Us</li></a>
+
+                </ul>
+                <a href="adminlog"><font id="first" title="Admin or owner only allowed">Admin Page</font></a>
+                {% if tag == 1 %} <a href="#"><font >
+                        
+                        {{tag1}}</font>
+                        {% else %}
+                        <a href="register"><font >Register</font>
+                        {% endif %}</a>
+
+            </div>
+         </div>
+        <img id="fitimg" src={% static 'img/bolt.jpg' %}>
+        <div id="oserv">OUR SERVICES</div>
+
+
+
+        <div id="content">
+            <div id="inside1"><img id="serviceimg" src={% static 'img/gen.jpg' %}></div>
+            <div id="inside2"><p><h1><u>General service check-up</u></h1><p id="paragrap">Basic services usually include a visual inspection and oil and filter change, the critical fluids in the engine such as anti-freeze, brake fluid, washer fluid, and steering fluid), are topped up. Also, to ensure the car is in the best condition possible, a check of up to 35 key components is carried out.<br><br>A periodic service is extremely essential in ensuring a long life for your car and does go a long way in keeping your vehicle reliable and niggle-free.
+            </p></p>
+        <a href="service"><button>Book a service</button></a></div>
+        </div>
+        <div id="content">
+            <div id="inside2"><p><h1><u>Oil change</u></h1><p id="paragrap">According to the experts, bike oil change should be done at least once in every six months or after every 2,000 kilometres. As a responsible bike owner, you should make sure to maintain this frequency for changing your bike's engine oil.<br><br>As the main source of lubrication in a motorbike engine, oil is often prone to heat and scaling that, over time, affects its durability and performance. Hence, regular oil change needs to be carried out at the right time to ensure proper functioning of your motorbike engine.
+            </p></p><a href="service"><button>Book a service</button></a></div>
+            <div id="inside1"><img id="serviceimg"  src={% static 'img/oil.jpg' %}></div>
+        </div>
+        <div id="content">
+            <div id="inside1"><img id="serviceimg"  src={% static 'img/ww.jpg' %}></div>
+            <div id="inside2"><p><h1><u>Water wash</u></h1><p id="paragrap">Washing your bike regularly will ensure all your expensive bike parts have a long and happy life. Whether you ride a road bike or a mountain bike, taking the time to wash your bike (especially your drivetrain) is a necessity. For road bikes, we suggest degreasing and "re-greasing" your drivetrain every 100 miles.
+
+             
+            </p></p>
+            <a href="service"><button>Book a service</button></a></p></div>
+        </div>
+        <center><a href="allservices"><button>Show More ￬</button></a></center><br><br>
+        <div id="end">
+            <ul id="under"><br>
+            <b><u>SUPPORT</u></b>
+            <li>Whatsapp</li>
+            <li>Facebook</li>
+            <li>Github</li>
+            <li>instagram</li>
+    
+            </ul><p>this WEBSITE MADE BY sathya(that's me) <br>© 2022 <b id="bold">john bike service company</b>. All rights reserved </p></div>
+    
+
+        <script src="" async defer></script>    
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href={% static 'css/prebook1.css' %}>
+    </head>
+    <body>
+        <div id="menu"><div id="title"><b>Your bike status</b></div></div>
+        <table border=".1px">
+            <th>Id</th>
+            <th>Your Name</th>
+            <th>vehicle name</th>
+            <th>Date</th>
+            <th>service type</th>
+            <th>Total Amount</th>
+            {% for i in data  %}
+            <tr>
+            <td>{{i.id}}</td>
+                <td>{{i.uname}}</td>
+                <td>{{i.vname}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.servicedel}}</td>
+                <td>xxxx</td>
+            </tr>
+            {% endfor %}
+
+
+
+        </table>
+        
+        <script src="" async defer></script><br></br>
+        <center><a href="../"><font >Go Home</font></a></center>
+
+    </body>
+</html>

@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+   
+    
+}
+#icon1{
+    height: 70px;
+    margin-left: 0;
+    position: absolute;
+}
+
+#menu{
+    background:linear-gradient(130deg,rgb(210, 218, 223),rgb(144, 153, 240));   
+    width: 100%;
+    height: 78px;
+    font-size: 33px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+box-shadow: 0px 0px 13px rgb(68, 66, 66);
+letter-spacing: 2px;
+word-spacing: 10px;
+
+}
+#title{
+    padding-top: 10px;
+}
+#service{
+    height: 70%;
+    width: auto;
+    max-width: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 88, 202, 0.616);
+    display: flex;
+box-shadow: 0px 0px 15px gray;
+}
+#inside{
+    width: 50%;
+    height: 100%;
+    
+
+}
+#inside img{
+height: 100%;
+width: 100%;
+}
+#inside2{
+    width: 50%;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:scroll;
+    background: rgba(0, 88, 202, 0.616);
+
+}
+#cointainer{
+    background: rgba(0, 88, 202, 0.616);
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-family:serif;
+
+
+}
+#tpe,#input,#submit,#date{
+        display: block;
+        height: 40px;
+        position: relative;
+        width: 70%;
+        margin-left: 10%;
+        outline: none;
+        margin-top: 20px;
+        font-size: medium;
+        border: none;
+        border-radius: 3px;
+        padding-left: 10px;
+
+
+}
+input:hover{
+background-color: rgb(198, 228, 255);
+}
+
+
+h1{
+    text-align: center;
+    font-family:impact;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    letter-spacing: 2px;
+font-weight:100;
+}   
+#submit{
+    width: 120;
+    text-align: center;
+    margin-left:33%;
+    color:rgb(0, 0, 0) ;
+    background-color: rgb(255, 240, 240);
+    border: none;
+    box-shadow: none;
+    
+
+}
+#submit:hover{
+    background-color: rgb(196, 0, 0);
+    color: wheat;
+
+}
+#date{
+    background:linear-gradient(120deg,rgb(255, 51, 0),orange);
+}
+#cb{
+    
+}
+lable{
+    font-family: system-ui, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.1;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 2.3em auto;
+    gap: 0.5em;
+    width: 55%;
+    margin-top: 2%;
+}

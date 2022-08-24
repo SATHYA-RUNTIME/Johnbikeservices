@@ -1,0 +1,32 @@
+<html>
+    {% load static %}
+    <link rel='stylesheet' href={% static "css/registers5.css" %}>
+
+    <head>
+        <meta charset="utf-8"
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body background={% static 'img/bikebk.jpg' %}>
+        <a href="/"> <img id="icon1" src={% static 'img/logos2.png' %}></img></a>
+        <div id="menu"><div id="title">Create Account</div><a href="login"><h4 id="toplogin">Login</h4></a></div>
+        <div id="cointainer"> 
+            <form method="POST">
+                {% csrf_token %}
+            <h1>Register<hr></h1>
+           <input  placeholder="User Name" type="text" name="first_name" required>
+           <input  placeholder="Phone number" type="text" name="mnumber" required>
+            <input placeholder="Email" type="text" name="email" required>
+            <input placeholder="Password" type="password" name="password1" required>
+            <br>
+            <input type="submit" value="SUBMIT" id="submit">
+            <div id='error'>{{error}}</div>
+
+
+            </form>
+        </div>
+        </body>
+    <html>

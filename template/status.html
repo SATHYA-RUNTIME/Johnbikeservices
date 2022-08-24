@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href={% static 'css/status1.css' %}>
+    </head>
+    <body>
+       
+        <div id="menu"><div id="title"><b>Your bike status</b></div></div>
+        {% for i in detail %}
+        <div id="container"><table border="0.5px">
+            <h2><center>Details</center></h2>
+           
+            <tr id="normal"><td>Owner Name</td><td>{{i.uname}}</td></tr>
+            <tr id="normal"><td>Bike name</td><td>{{i.vname}}</td></tr>
+            <tr id="normal"><td>Vehicle Type</td><td>{{i.vtype}}</td></tr>
+            <tr id="normal"><td>Type of Service</td><td>{{i.servicedel}}</td></tr>
+            {% if i.flag == 1 %}<tr id="status"><td >Status</td><td>Soon</td></tr>{% endif %}
+            {% if i.flag == 0 %}<tr id="status1"><td >Status</td><td>ready for delivery</td></tr>{% endif %}
+            {% if i.flag == 2 %}<tr id="status2"><td >Status</td><td>completed</td></tr>{% endif %}
+            
+            <tr id="normal"><td >Excepted dateStatus</td><td>{{i.uname}}</td></tr>
+           
+
+        </table>
+        
+        
+        </div>
+        {% endfor %}<br><br>
+        <center><a href="../"><font >Go Home</font></a></center><br><br>
+        <script src="" async defer></script>
+    </body>
+</html>

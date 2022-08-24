@@ -1,0 +1,33 @@
+<html>
+    {% load static %}
+    <link rel='stylesheet' href={% static "css/login1.css" %}>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <a href="/"> <img id="icon1" src={% static 'img/logo3.jpe   g' %}></img></a>
+        <div id="menu1"><div id="title1">Admin Log In</div></div>
+        
+        <div id="cointainer1"> 
+            <form method="POST">
+                {% csrf_token %}
+            <h1 id="lg1">Admin Log In<hr></h1>
+           
+            
+            <input placeholder="username" type="text" name="username" required>
+            <input placeholder="Password" type="text" name="pw" required>
+           
+            <input type="submit" value="SUBMIT" id="submit"><br>
+            <div id='error'>{{error}}</div>
+
+
+            </form>
+        </div>
+        </body>
+    <html>

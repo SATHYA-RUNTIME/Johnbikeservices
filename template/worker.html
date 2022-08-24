@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/worker1.css' %}">
+    </head>
+    <body>
+        <script src="" async defer></script>
+
+       <div id="bar"><lable>Welcome  Admin</lable></div>
+       <div id="container">       <center><h1 id="ud">Your Work</h1></center><br>
+        <table border="1px" >
+        <th id="id">Id</th>
+        <th id="vichle">Name</th>
+        <th id="vichle">Vichle Number</th>
+        <th id="vichle">vichle Name</th>
+        <th>services</th>
+        <th id="vichle" >Date for Service</th>
+        <th id="vichle" >Indimate to Owner</th>
+        
+{% for i in servicedata %}
+               
+            {% if i.flag == 1 %}
+            <tr>  
+            <td>{{i.id}}</td>
+            <td>{{i.uname}}</td>
+            <td>{{i.vname}}</td>
+            <td>{{i.vnumber}}</td>
+            <td>{{i.servicedel}}</td>
+            <td>{{i.date}}</td>
+            <td><a id="completed" href="../changeflag/{{i.id}}"> Click to Finish Work</a></td></tr>
+                
+             {% endif %}
+        
+{% endfor %}
+ 
+
+       </table><br><br><br><br>
+       <center><h1 id="ud">{{repet}}</h1></center><br>
+    <br><br>
+       <center><a href="../owner"><font >Go Back</font></a></center></div>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    }
+    a{
+        text-decoration: none;
+
+    }
+#topbar:hover
+{
+
+    color: rgb(42, 103, 114);
+}
+html {
+        scroll-behavior: smooth;
+      }
+#bar{
+    
+    width:100%;
+    height:80px;
+    background-color: rgb(255, 255, 255);
+    color:azure;
+    text-align: left;
+    font-size: 30px;
+    box-shadow: 0px 0px 14px 2px rgb(145, 140, 140);
+
+}
+#icon1{
+    height: 70px;
+    margin-left: 1%;
+    position: absolute;
+}
+#services{
+    width: auto;
+    height: 100%;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    float: left;
+    font-size: 20px;
+    list-style-type: none;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 3%;
+    margin-left: 6%;
+    font-weight: bold;
+
+
+}
+font{
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    top: 26%;
+    padding: 10px;
+    border-radius: 100px;   
+    margin-left: 2%;
+    background-color: black;
+    font-weight: bold;
+    
+}
+font:hover{
+    background-color: rgb(65, 109, 138);
+
+}
+#first{
+    margin-left: 18%;
+
+}
+#fitimg{
+height:100vh; 
+width: 100%;
+background-repeat: no-repeat;
+
+}
+#oserv{
+    height: 50px;
+    width: auto;
+    text-align: center;
+    font-size: 75px;
+    font-family: impact;
+    padding: 70px;
+    letter-spacing: 8px;
+    margin-bottom: 3%;
+
+}
+#content {
+width: 100%;
+height: 400px;
+display:flex;
+margin-bottom: 5%;
+box-shadow: 0px 7px 17px  rgb(218, 212, 212);
+
+}
+#inside1{
+    width: 45%;
+    height: auto;
+    box-shadow: 0px 7px 14px 2px rgb(145, 140, 140);
+    border-radius: 7px;
+
+
+}
+#inside2{
+    width: 55%;
+    height: auto;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+
+
+}
+#serviceimg{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+#inside2 h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+
+}
+#paragrap{
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 200px;
+    word-spacing: 5px;
+    font-size: 16px;
+    
+
+}
+button{
+    height: 60px;
+    width: 180px;
+background:linear-gradient(90deg, orange,rgb(255, 221, 27)) ;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px 2px rgb(145, 140, 140);
+
+
+}
+button:hover{
+    background:linear-gradient(90deg, orange,rgb(255, 221, 27)) ;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    box-shadow: 0px 0px 4px 2px rgb(153, 151, 151);
+}
+#end{
+    width: 100%;
+    height:auto;
+    background-color: rgb(25, 65, 102);
+    position: relative;
+    margin-top: 10px;
+    color: white;
+    float: left;
+}
+#under b{
+        margin-left: 6%;
+        color: white;
+}
+#end p{
+text-align:right;
+float: right;
+position: relative;
+bottom: 50px;
+}
+#under li{
+    float:none;
+    width: 80px;
+    padding: 0;
+
+}
+#bold{
+    color: rgb(19, 13, 13);
+}

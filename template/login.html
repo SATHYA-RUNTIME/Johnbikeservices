@@ -1,0 +1,33 @@
+<html>
+    {% load static %}
+    <link rel='stylesheet' href={% static "css/login1.css" %}>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body background={% static 'img/bikebk.jpg' %}>
+        <a href="/"> <img id="icon1" src={% static 'img/logos2.png' %}></img> </a>
+        <div id="menu"><div id="title"><font id="font">Log In</font><a id="cu" href="../register">Register</a></div></div>
+        
+        <div id="cointainer"> 
+            <form method="POST">
+                {% csrf_token %}
+            <h1 id="lg">Log In<hr></h1>
+           
+            
+            <input placeholder="Email" type="text" name="email" required>
+            <input placeholder="Password" type="text" name="password1" required>
+           
+            <input type="submit" value="SUBMIT" id="submit"><br>
+            <div id='error'>{{error}}</div>
+
+
+            </form>
+        </div>
+        </body>
+    <html>

@@ -1,0 +1,36 @@
+2. Bike service application
+
+Overview
+
+This application is for owners of Bike service stations. It helps the owners to list all
+the services they offer. Customers can choose one or more services to book
+Example:
+John owns a service station. He provides the following services:
+- General service check-up
+- Oil change
+- Water wash
+John’s customers can register for an account with their email address and mobile
+number. They can choose a service. Book the service at a particular date.
+Once the customer booked a service, John receives an email notification with details
+about the service requested by the customer.
+Once the service is completed, john will mark the specific booking (of a customer) as
+“ ready for delivery”
+The customer will receive an email saying that his bike is ready
+for delivery. Once delivered, John will mark the booking as
+“completed” Specifications:
+Bike station owner:
+- Should be able to create / edit / delete all his services and their details
+- View a list of all bookings ( pending, ready for delivery and completed)
+- View details of each booking
+- Mark a booking as ready for delivery
+- Mark a booking as completed
+- Receive an email whenever a booking is made
+Customers
+- Should be able to register for an account with his email address and mobile
+number
+- Book a service at a particular date
+- See the status of his booking
+- See all his previous bookings
+- Receive an email as soon as his booking is ready for delivery
+
+gaafrshpodlirrsa

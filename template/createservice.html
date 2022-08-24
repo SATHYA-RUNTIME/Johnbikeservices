@@ -1,0 +1,27 @@
+<!-- <html><head>        <link rel="stylesheet" href="index.css">
+</head>
+    <body>
+        <div id="container">
+            <h1 id="content">YOUR DETAILS IS SUBMITED</h1>
+        </div>
+    </body>
+</html> -->
+<html>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'css/createservice1.css' %}>
+    <body>
+        <div id="box1">
+            <h2>ADD SERVISES</h2>
+            <hr>
+         <div id="box2">
+            <form method="POST">
+                {% csrf_token %}
+            <h4 id="a">Service Title :</h4>
+            <input  name="title" type="text" id="text"><br>
+            <h4 id="a">Service Description :</h4>
+            <textarea  name="des"></textarea><br><br>
+            <input type="submit" id="sub" value="submit"></form>
+         </div>
+        </div>
+    </body>
+</html>
