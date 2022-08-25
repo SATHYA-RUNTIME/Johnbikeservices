@@ -33,8 +33,7 @@ this is the project for booking the bike service.
   > when you successfully run the python3 manage.py runserver in terminal a address shown **like** `http://127.0.0.1:8000` just copy and paste in your browser.
     
      
-> #### 5. if you got any error with missing python module just try to install with pip (EX: pip install <missing package>),Check your internet connection
-  because the mail sending services get blocked.
+> #### 5. if you got any error with missing python module just try to install with pip (EX: pip install <missing package>),Check your internet connection because the mail sending services get blocked.
  
 > ## `6. Admin username & Password : adminuser & dhoni07`
   
